@@ -10,6 +10,9 @@ dir_out = ""
 file_out = file_in.replace('.pdf', '_rotated.pdf')
 path_out = dir_out + file_out
 
+# Rotation angle in degrees
+deg = 90
+
 # Open the PDF file
 pdf_in = open(path_in, 'rb')
 pdf_reader = PyPDF2.PdfReader(pdf_in)
@@ -17,7 +20,7 @@ pdf_writer = PyPDF2.PdfWriter()
 
 # Rotate each page in the PDF file
 for page in pdf_reader.pages:
-    page.rotate(-90)
+    page.rotate(deg)
     pdf_writer.add_page(page)
 
 # Save the rotated PDF file
