@@ -1,4 +1,4 @@
-import PyPDF2
+from PyPDF2 import PdfReader, PdfWriter
 
 # Path to the PDF file to be rotated
 dir_in = ""
@@ -15,8 +15,8 @@ deg = 90
 
 # Open the PDF file
 pdf_in = open(path_in, 'rb')
-pdf_reader = PyPDF2.PdfReader(pdf_in)
-pdf_writer = PyPDF2.PdfWriter()
+pdf_reader = PdfReader(pdf_in)
+pdf_writer = PdfWriter()
 
 # Rotate each page in the PDF file
 for page in pdf_reader.pages:
