@@ -6,6 +6,7 @@ This project provides a script to rotate all pages in a PDF file.
 
 - Python 3.x
 - PyPDF2 library
+- Streamlit (for usage as an app)
 
 ## Usage
 
