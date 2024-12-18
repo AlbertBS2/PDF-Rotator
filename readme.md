@@ -1,6 +1,6 @@
 # PDF Rotator
 
-This project provides a script to rotate all pages in a PDF file.
+This project provides a script to rotate all pages in a PDF file. It can also be used as a web app.
 
 ## Requirements
 
@@ -9,6 +9,12 @@ This project provides a script to rotate all pages in a PDF file.
 - Streamlit (for usage as an app)
 
 ## Usage
+To run it as a web app, navigate to the folder where you saved the file and run:
+```bash
+python streamlit app_rotate_pdf.py
+```
+
+To run is at a python script:
 
 1. Place your PDF file in the specified input directory.
 
