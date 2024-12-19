@@ -13,7 +13,7 @@ path_out = dir_out + "/" + file_out
 # Pages to be rotated
 # If you want to rotate all pages, set the value to None
 # If you want to rotate only specific pages, set the value to a list of two integers [start, end]
-pages = None
+range_pages = None
 
 # Rotation angle in degrees
 deg = 90
@@ -26,11 +26,11 @@ pdf_writer = PdfWriter()
 # Rotate pages in the PDF file
 i=1
 for page in pdf_reader.pages:
-    if pages is None:
+    if range_pages is None:
         page.rotate(deg)
         pdf_writer.add_page(page)
     else:
-        if i in range(pages[0], pages[1]+1):
+        if i in range(range_pages[0], range_pages[1]+1):
             page.rotate(deg)
             pdf_writer.add_page(page)
         else:
