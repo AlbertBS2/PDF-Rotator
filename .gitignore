@@ -1,2 +1,5 @@
 # Ignore venv folder
 venv/
+
+# Ignore build folder
+app_rotate_pdf.bat
