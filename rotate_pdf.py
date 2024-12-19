@@ -23,7 +23,7 @@ pdf_in = open(path_in, 'rb')
 pdf_reader = PdfReader(pdf_in)
 pdf_writer = PdfWriter()
 
-# Rotate each page in the PDF file
+# Rotate pages in the PDF file
 i=1
 for page in pdf_reader.pages:
     if pages is None:
